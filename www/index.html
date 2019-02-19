@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Manual de HTML5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/controlador.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light bg-light"><a class="navbar-brand">Manual HTML</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mi_menu"
+            aria-controls="mi_menu" aria-expanded="true" aria-label="Abrir menú">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse show" id="mi_menu">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Manual HTML</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="#" id="menu_facil">Estructura Básica</a>
+                        <a class="dropdown-item" href="#" id="menu_medio">Formato Texto</a>
+                        <a class="dropdown-item" href="#" id="menu_dificil">Etiquetas Semánticas</a>
+                        <a class="dropdown-item" href="#" id="menu_dificil">Listas</a>
+                        <a class="dropdown-item" href="#" id="menu_dificil">Tablas</a>
+                        <a class="dropdown-item" href="#" id="menu_dificil">Modelo cajas</a>
+                        <a class="dropdown-item" href="#" id="menu_dificil">Formularios</a>
+                        <a class="dropdown-item" href="#" id="menu_dificil">Enlaces</a>
+                        <a class="dropdown-item" href="#" id="menu_dificil">Multimedia</a>
+                        <a class="dropdown-item" href="#" id="menu_dificil">Canvas</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="navbar-collapse collapse show" id="mi_menu">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Manual Accesibilidad</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="#" id="menu_facil">WCAG</a>
+                        <a class="dropdown-item" href="#" id="menu_medio">Niveles A, AA, AAA</a>
+                        <a class="dropdown-item" href="#" id="menu_dificil">Requisitos legales, empresas y sanciones</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+    </nav>
+
+
+    <div id="menu_estructuraBasica">
+
+    </div>
+    <div id="menu_formatoTexto">
+        <div>
+            <h2>Formato de texto en HTML</h2>
+            <p> Dentro de nuestra página web querremos escribir y dar forma a ese texto en algún momento.</br> Para ello
+                el
+                lenguaje HTML nos proporciona ciertas etiquetas para escribir el texto de la forma que más nos convenga.
+            </p>
+        </div>
+        <div>
+            <h3>Títulos o encabezamientos en HTML:</h3>
+            <table width="580" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                    <td width="50%"><strong>Etiqueta</strong></td>
+                    <td width="50%"><strong>Visualización</strong></td>
+                </tr>
+                <tr>
+                    <td>
+                        <font color="#0000FF">&lt;h1&gt; Título &lt;/h1&gt;</font>
+                    </td>
+                    <td>
+                        <h1>Título</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <font color="#0000FF">&lt;h2&gt; Título &lt;/h2&gt;</font>
+                    </td>
+                    <td>
+                        <h2>Título</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <font color="#0000FF">&lt;h3&gt; Título &lt;/h3&gt;</font>
+                    </td>
+                    <td>
+                        <h3>Título</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <font color="#0000FF">&lt;h4&gt; Título &lt;/h4&gt;</font>
+                    </td>
+                    <td>
+                        <h4>Título</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <font color="#0000FF">&lt;h5&gt; Título &lt;/h5&gt;</font>
+                    </td>
+                    <td>
+                        <h5>Título</h5>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <font color="#0000FF">&lt;h6&gt; Título &lt;/h6&gt;</font>
+                    </td>
+                    <td>
+                        <h6>Título</h6>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h3>Estilos de fuentes en HTML:</h3>
+            <table width="580" cellspacing="1" cellpadding="0" border="0">
+                <tr>
+                    <td><strong>Etiqueta</strong></td>
+                    <td><strong>Visualización</strong></td>
+                </tr>
+                <tr>
+                    <td width="60%">
+                        <ul>
+                            <li>
+                                <font size="3" color="#0000FF">&lt;B&gt;Texto en Negrita&lt;/b&gt;</font>
+                            </li>
+                            <li>
+                                <font size="3" color="#0000FF">&lt;I&gt;Itálica&lt;/i&gt;</font>
+                            </li>
+                            <li>
+                                <font size="3" color="#0000FF">&lt;B&gt;&lt;I&gt;Negrita e Itálica&lt;/i&gt;&lt;/b&gt;
+                                </font>
+                            </li>
+                            <li>
+                                <font size="3" color="#0000FF">&lt;EM&gt;Enfatizado&lt;/em&gt;</font>
+                            </li>
+                            <li>
+                                <font size="3" color="#0000FF">&lt;STRONG&gt;Fuerte&lt;/strong&gt;</font>
+                            </li>
+                            <li>
+                                <font size="3" color="#0000FF">&lt;CODE&gt;Code Texto&lt;/code&gt;</font>
+                            </li>
+                            <li>
+                                <font size="3" color="#0000FF">&lt;CITE&gt; Citation Text&lt;/cite&gt;</font>
+                            </li>
+                            <li>
+                                <font size="3" color="#0000FF">&lt;KBD&gt;Keyboard Text&lt;/kbd&gt;</font>
+                            </li>
+                            <li>
+                                <font size="3" color="#0000FF">&lt;SAMP&gt;Sample Text&lt;/samp&gt;</font>
+                            </li>
+                            <li>
+                                <font size="3" color="#0000FF">&lt;TT&gt;Teletype Text&lt;/tt&gt;</font>
+                            </li>
+                            <li>
+                                <font size="3" color="#0000FF">&lt;VAR&gt;Variable Element Text&lt;/var&gt;</font>
+                            </li>
+                            <li>
+                                <font size="3" color="#0000FF">&lt;BIG&gt;Texto grande&lt;/big&gt;</font>
+                            </li>
+                            <li>
+                                <font size="3" color="#0000FF">&lt;SMALL&gt;Texto pequeño&lt;/small&gt;</font>
+                            </li>
+                            <li>
+                                <font size="3" color="#0000FF">&lt;STRIKE&gt;Texto tachado&lt;/strike&gt;</font>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><b>Texto en Negrita</b></li>
+                            <li><i>Itálica</i></li>
+                            <li><b><i>Negrita e Itálica</i></b></li>
+                            <li><em>Enfatizado</em> </li>
+                            <li><strong>Fuerte</strong></li>
+                            <li><code>Code Texto</code> </li>
+                            <li><cite>Citation Text</cite> </li>
+                            <li><kbd>Keyboard Text</kbd> </li>
+                            <li><samp>Sample Text</samp> </li>
+                            <li><tt>Teletype Text</tt> </li>
+                            <li><var>Variable Element Text</var> </li>
+                            <li>
+                                <font size="4">Texto grande</font>
+                            </li>
+                            <li>
+                                <font size="2">Texto pequeño</font>
+                            </li>
+                            <li><strike>Texto tachado</strike> </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h3>Tamaño de fuentes en HTML</h3>
+            <p> El tamaño de las fuentes se puede especificar de dos maneras, una de ellas por medio de un número del 1
+                al 7 (de
+                más pequeño a más grande) del siguiente modo<br>
+                <font color="#0000FF">&lt;font size=1&gt; Esta es la letra más pequeña que se puede conseguir
+                    &lt;/font&gt;<br>
+                </font>que se verá como<br>
+                <font size="1">Esta es la letra más pequeña que se puede conseguir</font>
+            </p>
+            <p>
+                <font size="3">Otra forma es por medio de una referencia relativa:<br> </font>
+                <font size="3" color="#0000FF">&lt;font size="+1"&gt; Esto es igual que poner size=4 &lt;/font&gt;
+                </font>
+                <font size="3"><br> que se ve como<br> </font>
+                <font size="4">Esto es igual que poner size=4</font>
+            </p>
+            <p>El tamaño por defecto es 3</p>
+        </div>
+        <div>
+            <h3>Tipo de fuentes en HTML</h3>
+            <p>
+                <font size="3">El tipo de fuente es un atributo de FONT y tiene la siguiente sintaxis<br> </font>
+                <font size="3" color="#0000FF">&lt;font face="Arial"&gt;Eso se verá en la fuente Arial&lt;/font&gt;
+                </font>
+                <font size="3"><br> que se ve como:</font>
+                <font size="3" face="Arial"><br> Eso se verá en la fuente Arial</font>
+            </p>
+        </div>
+        <div>
+            <h3>Color de las fuentes en HTML</h3>
+            <p>
+                <font size="3" color="#000000">Es otro atributo de FONT. Mira en la página de </font><a
+                    href="colores.htm">
+                    <font size="3" color="#000000">colores</font>
+                </a>
+                <font size="3" color="#000000"> para cuales son los colores que puedes usar. La sintaxis es la
+                    siguiente:<br>
+                </font>
+                <font size="3" color="#0000FF">&lt;font size=2 face="MS Sans Serif" color="green"&gt;De esta forma
+                    quedaría el
+                    texto coloreado&lt;/font&gt;<br> </font>
+                <font size="3" color="#000000">que se verá así:</font>
+            </p>
+            <p>
+                <font size="3" face="MS Sans Serif" color="green">De esta forma quedaría el texto coloreado</font>
+            </p>
+        </div>
+        <div>
+            <h3>Párrafos y bloques en HTML</h3>
+            <p> Para definir y separar bloques de texto se emplean una serie de etiquetas que definen los párrafos,
+                texto
+                preformateado o bloques con significado especial como direcciones o citas. <br> Etiquetas de bloques:
+            </p>
+            <p>
+                <font color="#0000FF">&lt;P&gt;</font> -Se utiliza para que los párrafos queden separados por una línea
+                en
+                blanco. Si solo quieres escribir un punto y aparte debes usar <font color="#0000FF">&lt;BR&gt;</font>.
+                Las
+                marcas inicial y final son <font color="#0000FF">&lt;P&gt;</font>
+                <font color="#000000"> y </font>
+                <font color="#0000FF">&lt;/P&gt;. </font>
+                <font color="#000000">La etiqueta </font>
+                <font color="#0000FF">&lt;P&gt;</font>
+                <font color="#000000"> admite los atributos:</font>
+            </p>
+            <blockquote>
+                <p>
+                    <font color="#0000FF">ALIGN="left" , ALIGN="right"</font> , <font color="#0000FF">ALIGN="center"
+                    </font> y
+                    <font color="#0000FF">ALIGN="justify" </font>para alinearlo a la izquierda, a la derecha, centrarlo
+                    o
+                    justificarlo totalmente. Por defecto está alineado a la izquierda.
+                </p>
+            </blockquote>
+            <p>
+                <font color="#0000FF">&lt;PRE&gt;</font> -El texto insertado entre las marcas <font color="#0000FF">
+                    &lt;PRE&gt;
+                </font> y <font color="#0000FF">&lt;/PRE&gt;</font> será visualizado por el navegador respetando el
+                formato con
+                el que fue escrito en el fichero fuente HTML. Esta etiqueta es muy útil para escribir más de un espacio
+                o para
+                hacer pequeñas tablas
+            </p>
+            <p>
+                <font color="#0000FF">&lt;ADDRESS&gt;</font> -Empleada para indicar que un texto representa una
+                dirección o una
+                firma. Generalmente se presenta en cursiva y tabulado.
+            </p>
+            <p>
+                <font color="#0000FF">&lt;BLOCKQUOTE&gt;</font> -Se representa con tabulaciones a la izquierda y
+                derecha. Toda
+                los párrafos de esta página están entre las etiquetas <font color="#0000FF">&lt;BLOCKQUOTE&gt; y
+                    &lt;/BLOCKQUOTE&gt;, </font>
+                <font color="#000000">de ese modo se consigue que el texto se presente con márgenes a ambos lados.
+                </font>
+            </p>
+            <p>
+                <font color="#0000FF">&lt;BR&gt;</font>
+                <font color="#000080"> </font> -Este elemento sólo tiene marca inicial e indica un salto de línea, es
+                decir un
+                punto y aparte sin separar el párrafo. <strong>Esta etiqueta no tiene su correspondiente de
+                    cierre.</strong>
+            </p>
+            <p>
+                <font color="#0000FF">&lt;HR&gt;</font> -Se emplea para representar una línea horizontal.
+                <strong>Tampoco tiene
+                    pareja de cierre. </strong>Se pueden emplear los atributos:
+            </p>
+            <blockquote>
+                <p>
+                    <font color="#0000FF">ALIGN="left" , ALIGN="right"</font> , para alinearla a la izquierda o a la
+                    derecha.
+                    Por defecto aparece centrada
+                </p>
+                <p>
+                    <font color="#0000FF">WIDTH="66%" SIZE="3"</font>, para especificar el ancho en % y el alto en
+                    píxels
+                </p>
+                <p>
+                    <font color="#0000FF">COLOR="#0000FF"</font> , para especificar el color
+                </p>
+                <p>&nbsp;</p>
+            </blockquote>
+        </div>
+    </div>
+    <div id="menu_etiquetasSemanticas">
+        <header>
+            <h2>3.3 Etiquetas semánticas de HTML5</h2>
+            <hr color="#FF7F50">
+            <p>Procedamos a ver las etiquetas semánticas de HTML5.<br>
+                Lo primero,es tener actualizado el ordenador, ya que HTML5 es una nueva version de HTML, y muchos
+                navegadores no
+                soportan estos cambios.</p><br>
+        </header>
+        <section>
+            <article>
+                <h3>Definición</h3>
+                <hr color="#FF7F50">
+                <p>Una etiqueta se califica como semántica si nos informa sobre lo que va a tratar su contenido.<br>
+                    Las etiquetas semánticas ayudan a definir la estructura del documento, y permiten una mejor
+                    indexacion de
+                    las paginas. Un ejemplo es la etiqueta &lt;SECTION&gt;,<br>
+                    la cual nos dice QUÉ contiene una sección o capítulo dentro de la página.</p>
+                <p>Frente a las etiquetas semánticas tenemos otros tipos de etiquetas, como las que afectan al formato
+                    (&lt;UL&gt;), las que afectan a multimedia (como &lt;VIDEO&gt;), etc.</p>
+                <p>El uso de las etiquetas semánticas es bastante simple e intuitivo, y se pueden colocar dentro del
+                    texto como
+                    se desee, sin existir reglas sobre su colocación. Pero tampoco podemos olvidar que <br>
+                    son utilizadas para mejorar la indexación de la página, por lo que debemos colocarlas con lógica.
+                </p>
+                <p>También hay que aclarar que las etiquetas semánticas no añaden ningún formato, ni cambian el tipo de
+                    letra,
+                    ya que podríamos pensar que &lt;HEADER&gt; nos cambiaría el tamaño de letra.<br>
+                    El formato lo definiremos posteriormente con CSS.
+
+                    <p>Antes de la creación de estas nuevas etiquetas, se utilizaban las etiquetas DIV, las cuales no
+                        aportaban
+                        información al tema, salvo que se utilizasen con propiedades ID o CLASS, como por ejemplo:
+                        &nbsp; <span style="color: blue;">&lt;DIV CLASS = "Cabecera"&gt;</span></p><br>
+            </article>
+            <article>
+                <h3>Tipos de etiquetas</h3>
+                <hr color="#FF7F50">
+                Las que vamos a estudiar más a fondo son:
+                &lt;HEADER&gt;, &lt;NAV&gt;, &lt;SECTION&gt;, &lt;ARTICLE&gt;, &lt;ASIDE&gt;, &lt;FOOTER&gt;,
+                &lt;FIGURE&gt; y
+                &lt;FIGCAPTION&gt;<br>
+                <p>El esquema de una página con etiquetas semánticas podría ser el siguiente.</p>
+
+                <img src="img/estructura-html5.jpg" alt="estructura html5" width="400" height="200">
+
+                <p><span style="color: blue;">&lt;HEADER&gt; </span></p>
+                <p>Se utiliza como una introducción del elemento que la contiene. El HEADER suele llevar el título, la
+                    descripción corta y el logo de la página.<br>
+                    Si colocamos un HEADER dentro del BODY, será una introducción de toda la página. Si colocamos un
+                    HEADER
+                    dentro de un SECTION, contendrá una introducción a esa
+                    sección.<br></p>
+
+                <p>El HEADER no es equivalente a la parte superior de la página, aunque frecuentemente está en esa
+                    posición.<br>
+                    El HEADER por si mismo no separa contenidos, por lo que no se debe utilizar aislado, sino dentro de
+                    otra
+                    etiqueta.<br>
+                    Es bastante frecuente utilizar las etiquetas H1, H2, ... para escribir los títulos dentro del
+                    HEADER.</p>
+
+                <p><span style="color: blue;">&lt;SECTION&gt; </span></p>
+
+                <p>Una SECTION agrupa contenido con un tema común; como por ejemplo, las diferentes partes de un
+                    periódico:
+                    política, sociedad, deportes, ...<br>
+
+                    Cada SECTION puede estar encabezada por una etiqueta H1, H2,... dentro de una SECTION suelen haber
+                    etiquetas
+                    ARTICLE, DIV o P.<br></p>
+                Por ejemplo, un artículo de prensa sobre futbol dentro de la sección de deportes.<br>
+                Una SECTION no debe ser usada con el único fin de dar formato, para eso se utiliza la etiqueta
+                &lt;DIV&gt;.
+
+                <p><span style="color: blue;">&lt;ARTICLE&gt; </span></p>
+
+                <p>Representa una unidad de contenido, es decir, contenido que responde a un tema concreto.<br> El
+                    ejemplo más
+                    claro es
+                    un artículo dentro de una revista, o también, si nos situamos en un foro, un ARTICLE sería un post.
+                </p>
+
+                Se pueden anidar un ARTICLE dentro de otro ARTICLE. Dentro de un ARTICLE, el contenido se suele
+                estructurar con
+                las etiquetas &lt;DIV&gt; y &lt;P&gt;.
+                <p><span style="color: blue;">&lt;NAV&gt; </span></p>
+
+                Esta etiqueta está pensada para contener la barra de navegación, o los enlaces a páginas de ese sitio
+                web.<br><br>
+
+                Se suele colocar en la parte superior de la página, o en un lateral. <br>Suele estar formada por una
+                lista de
+                enlaces
+                con las etiquetas &lt;UL&gt; y &lt;LI&gt;.
+
+                <p><span style="color: blue;">&lt;ASIDE&gt; </span></p>
+
+                <p>Esta etiqueta está diseñada para contenido suplementario, es decir, menos importante que el cuerpo de
+                    la
+                    página,
+                    ya que se coloca en un lateral de ésta.</p>
+                Esta etiqueta puede contener un tema relacionado indirectamente con el tema principal, como una reseña
+                de un
+                autor;
+                o puede contener un tema no relacionado, como en el caso de publicidad.
+
+                <p><span style="color: blue;">&lt;FOOTER&gt; </span></p>
+
+                Normalmente, esta etiqueta se coloca al final de la página, y contiene información del tipo: autor,
+                copyright,
+                contacto, mapa del sitio, etc.<br><br>
+
+                <p>Recapitulando, mostremos un ejemplo de todo lo visto hasta ahora:</p>
+                <code>
+                &lt;body&gt;<br><br>
+                &nbsp;&nbsp;&nbsp;&lt;header&gt;<br>
+                &nbsp;&nbsp;&nbsp;&lt;h1&gt;Recetas&lt;/h1&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;nav&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;Carnes&lt;/a&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;Pescados&lt;/a&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/nav&gt;<br>
+                &nbsp;&nbsp;&nbsp;&lt;/header&gt;<br><br>
+        
+                &nbsp;&nbsp;&nbsp;&lt;section&gt;<br>
+                &nbsp;&nbsp;&nbsp;&lt;h2&gt;Recetas de carne&lt;/h2&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;article&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Conejo al ajillo&lt;/h3&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Explicación de la receta 1&lt;/p&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/article&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;article&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Choto a la brasa&lt;/h3&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Explicación de la receta 2&lt;/p&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/article&gt;<br>
+                &nbsp;&nbsp;&nbsp;&lt;/section&gt;<br><br>
+                &nbsp;&nbsp;&nbsp;&lt;section&gt;<br>
+                &nbsp;&nbsp;&nbsp;&lt;h2&gt;Recetas de pescado&lt;/h2&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;article&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Dorada a la sal&lt;/h3&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Explicación de la receta 3&lt;/p&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/article&gt;<br>
+                &nbsp;&nbsp;&nbsp;&lt;/section&gt;<br><br>
+        
+                &nbsp;&nbsp;&nbsp;&lt;aside&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Publicidad de vodafone&lt;/p&gt;<br>
+                &nbsp;&nbsp;&nbsp;&lt;/aside&gt;<br><br>
+        
+                &nbsp;&nbsp;&nbsp;&lt;footer&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Autores: los ScrumMasters&lt;/p&gt;<br>
+                &nbsp;&nbsp;&nbsp;&lt;/footer&gt;<br>
+                &lt;/body&gt;<br><br>
+            </code>
+                <p><span style="color: blue;">Otras etiquetas...</span></p>
+
+                <p>Aquí podemos resaltar unas nuevas etiquetas semánticas, como:<br><br> la etiqueta &lt;FIGURE&gt;
+                    usada para
+                    imágenes y
+                    gráficos,<br>
+                    la etiqueta &lt;FIGCAPTION&gt; que es un pie de imagen, <br>la etiqueta &lt;TIME&gt; para definir
+                    fechas y
+                    horas,<br>
+                    y las etiquetas &lt;MAIN&gt;, &lt;MARK&gt;, &lt;SUMARY&gt; Y &lt;DETAILS&gt;.</p>
+
+                Veamos un ejemplo con el código con el que vamos a usar estas etiquetas:<br><br>
+                <code>
+                &lt;figure&gt;<br>
+                &nbsp;&nbsp;&nbsp;&lt;img src="img/IES.jpg" alt="IES Virgen del Carmen" width="500" height="300"&gt;<br>
+                &nbsp;&nbsp;&nbsp;&lt;figcaption&gt;Fig.1 - Entrada del instituto Virgen del Carmen de
+                Jaén.&lt;/figcaption&gt;<br>
+                &lt;/figure&gt;<br><br>
+                </code>
+                Ésto produce como resultado en pantalla:
+                <figure>
+                    <img src="img/IES.jpg" alt="IES Virgen del Carmen" width="500" height="300">
+                    <figcaption>Fig.1 - Entrada del instituto Virgen del Carmen de Jaén.</figcaption>
+                </figure>
+
+            </article>
+        </section>
+    </div>
+    <div id="menu_listas">
+        <h2>
+            <font color="#FF7F50">Listas</font>
+        </h2>
+        <hr color="#FF7F50">
+        <p>Las listas permiten crear párrafos agrupados y alineados mediante algún tipo de marcador, como puede ser
+            numeros, puntos, ...</p>
+        <p>Podemos encotrar dos tipos de listas: <strong>ordenadas</strong> y <strong>desordenadas</strong></p>
+        <h3>
+            <font color="#FF7F50">Listas desordenas</font>
+        </h3>
+        <hr color="#FF7F50">
+        <p>Las listas no ordenadas hay que meterlas dentro de la etiqueta <strong>&lt;ul&gt;</strong>
+            <strong>&lt;/ul&gt;</strong></p>
+        <p>Cada elemento que queramos añadir a la lista tendrá que ir dentro de la etiqueta <strong>&lt;li&gt;</strong>
+            <strong>&lt;/li&gt;</strong>. El punto que marca cada elemento de la lista se puede modificar gracias al
+            atributo <strong>type</strong>, entre los mas relevantes encontramos: </p>. <ul>
+            <li type="circle">circle: puntos con el fondo blanco</li>
+            <li type="square">square: cuadrados</li>
+            <li type="disc"> disc: Puntos negros</li>
+        </ul>
+        <p>Veamos algunos ejemplos:</p>
+        <p><strong>Type circle</strong></p>
+        <p>&lt;ul type="circle"&gt;</p>
+        <p>&nbsp;&nbsp;&lt;li&gt;Café&lt;/li&gt;</p>
+        <p>&nbsp;&nbsp;&lt;li&gt;Té&lt;/li&gt;</p>
+        <p>&nbsp;&nbsp;&lt;li&gt;Bebidas alcohólicas&lt;/li&gt;</p>
+        <p>&lt;/ul&gt;</p> </br>
+        <ul type="circle">
+            <li>Café</li>
+            <li>Té</li>
+            <li>Bebidas alcohólicas</li>
+        </ul> </br>
+        <p><strong>Type square</strong></p>
+        <p>&lt;ul type="square"&gt;</p>
+        <p>&nbsp;&nbsp;&lt;li&gt;Café&lt;/li&gt;</p>
+        <p>&nbsp;&nbsp;&lt;li&gt;Té&lt;/li&gt;</p>
+        <p>&nbsp;&nbsp;&lt;li&gt;Bebidas alcohólicas&lt;/li&gt;</p>
+        <p>&lt;/ul&gt;</p> </br>
+        <ul type="square">
+            <li>Café</li>
+            <li>Té</li>
+            <li>Bebidas alcohólicas</li>
+        </ul>
+        <h3>
+            <font color="#FF7F50">Listas ordenadas</font>
+        </h3>
+        <hr color="#FF7F50">
+        <p>Las listas ordenadas van dentro de las etiquetas <strong>&lt;ol&gt;</strong><strong>&lt;/ol&gt;</strong></p>
+        <p>Cada punto de la lista se escribe igual que en las listas desordenadas, dentro de la etiqueta
+            <strong>&lt;li&gt;</strong><strong>&lt;/li&gt;</strong> </p>
+        <p>En las listas ordenadas tenemos distintos tipos de numeración, haciendo referencia con el atributo
+            <strong>type</strong>:</p>
+        <ul>
+            <li>a: Para ordenar en letras minúsculas</li>
+            <li>A: Para ordenar en letras mayúsculas</li>
+            <li>i: Para ordenar con numeración romana minúscula</li>
+            <li>I: Para ordenar con numeración romana mayúscula</li>
+            <li>1: Para ordenar con numeración decimal</li>
+        </ul>
+        <p>Veamos algunos ejemplos:</p>
+        <p><strong>Type a</strong></p>
+        <p>&lt;ol type="a"&gt;</p>
+        <p>&nbsp;&nbsp;&lt;li&gt;Café&lt;/li&gt;</p>
+        <p>&nbsp;&nbsp;&lt;li&gt;Té&lt;/li&gt;</p>
+        <p>&nbsp;&nbsp;&lt;li&gt;Bebidas alcohólicas&lt;/li&gt;</p>
+        <p>&lt;/ol&gt;</p> </br>
+        <ol type="a">
+            <li>Café</li>
+            <li>Té</li>
+            <li>Bebidas alcohólicas</li>
+        </ol> </br>
+        <p><strong>Type X</strong></p>
+        <p>&lt;ol type="X"&gt;</p>
+        <p>&nbsp;&nbsp;&lt;li&gt;Café&lt;/li&gt;</p>
+        <p>&nbsp;&nbsp;&lt;li&gt;Té&lt;/li&gt;</p>
+        <p>&nbsp;&nbsp;&lt;li&gt;Bebidas alcohólicas&lt;/li&gt;</p>
+        <p>&lt;/ol&gt;</p> </br>
+        <ol type="X">
+            <li>Café</li>
+            <li>Té</li>
+            <li>Bebidas alcohólicas</li>
+        </ol>
+        <p>Si queremos que un elemento concreto de la lista tome un valor determina lo podemos hacer con el atributo
+            <strong>value</strong></p>
+        <h3>
+            <font color="#FF7F50">Listas anidadas</font>
+        </h3>
+        <hr color="#FF7F50">
+        <p>Podemos hacer una lista dentro de una lista de la siguiente manera:</p>
+        <p>&lt;ul type="circle"&gt;</p>
+        <p>&nbsp;&nbsp;&lt;li&gt;Café&lt;/li&gt;</p>
+        <p>&nbsp;&nbsp;&lt;li&gt;Té&lt;/li&gt;</p>
+        <p>&nbsp;&nbsp;&lt;li&gt;Bebidas alcohólicas</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul type="square"&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Ginebra&lt;/li&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Ron&lt;/li&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Whisky&lt;/li&gt;</p>
+        <p>&nbsp;&nbsp;&lt;/li&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;</p>
+        <p>&lt;/ul&gt;</p> </br>
+        <ul type="circle">
+            <li>Café</li>
+            <li>Té</li>
+            <li>Bebidas alcohólicas <ul type="square">
+                    <li>Ginebra</li>
+                    <li>Ron</li>
+                    <li>Whisky</li>
+                </ul>
+            </li>
+        </ul> </br>
+        <h3>
+            <font color="#FF7F50">Lista de términos</font>
+        </h3>
+        <hr color="#FF7F50">
+        <p>Es un tipo de lista que permite crear definiciones para los elementos</p>
+        <p>Para abrir la lista se realiza con la etiqueta <strong>&lt;dl&gt;</strong> y su cierre. Para cada elemento de
+            la lista lo crearemos con la etiqueta <strong>&lt;dt&gt;</strong> y su cierre. Por último abrimos el
+            comentario de definición con la etiqueta <strong>&lt;dd&gt;</strong> y su cierre correspondiente</p>
+        <p>&lt;dl&gt;</p>
+        <p>&nbsp;&nbsp;&lt;dt&gt;ordenador&lt;/dt&gt;</p>
+        <p>&nbsp;&nbsp;&lt;dd&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Máquina electrónica que, mediante determinados programas, permite almacenar y tratar
+            información, y resolver problemas de diversa índole.</p>
+        <p>&nbsp;&nbsp;&lt;/dd&gt;</p>
+        <p>&lt;/dl&gt;</p> </br>
+        <dl>
+            <dt>Ordenador</dt>
+            <dd> Máquina electrónica que, mediante determinados programas, permite almacenar y tratar información, y
+                resolver problemas de diversa índole. </dd>
+        </dl>
+    </div>
+    <div id="menu_tablas">
+        <title>3.5 Tablas en HTML5</title>
+        <h1>
+            <font color="#FF7F50">Tablas</font>
+        </h1>
+        <p>
+            <font color="blue">Las tablas son elementos fundamentales del HTML, ya que mejora la puesta visual de la
+                página. Son conjuntos de filas y columnas que muestran el texto y las imágenes que nosotros queramos.
+                Las tablas admiten todo tipo de formatos y por tanto nos permite diseñar disposiciones complejas en las
+                páginas.</font>
+        </p>
+        <hr color="#FF7F50">
+        <h2>
+            <font color="#FF7F50">Tablas simples</font>
+        </h2>
+        <hr color="#FF7F50">
+        <p>Para realizar una tabla simple utilizaremos la etiqueta <i>
+                <font color="blue">table</font>
+            </i>, con la que indicaremos cada fila con <font color="blue"><i>tr</i></font> para realizar una fila y
+            <font color="blue"><i>td</i></font> para realizar una columna.<br> Con el atributo <font color="blue">
+                <i>border</i></font> podemos modificar el ancho del borde de la tabla.<br> A continuación realizaremos
+            un ejemplo de tabla : <br></p>
+        <code>&lt;table border ="1"&gt;<br>                     &lt;tr&gt;<br>                     &lt;td&gt;c1&lt;/td&gt;<br>                     &lt;td&gt;c2&lt;/td&gt;<br>                     &lt;td&gt;c3&lt;/td&gt;<br>                     &lt;td&gt;c4&lt;/td&gt;<br>                     &lt;/tr&gt;<br>                     &lt;tr&gt;<br>                     &lt;td&gt;c5&lt;/td&gt;<br>                     &lt;td&gt;c6&lt;/td&gt;<br>                     &lt;td&gt;c7&lt;/td&gt;<br>                     &lt;td&gt;c8&lt;/td&gt;<br>                     &lt;/tr&gt;<br>                     &lt;/table&gt;<br>             </code>
+        <p> Y quedaria de la siguiente manera : <br> </p>
+        <table border="1">
+            <tbody>
+                <tr>
+                    <td>c1</td>
+                    <td>c2</td>
+                    <td>c3</td>
+                    <td>c4</td>
+                </tr>
+                <tr>
+                    <td>c5</td>
+                    <td>c6</td>
+                    <td>c7</td>
+                    <td>c8</td>
+                </tr>
+            </tbody>
+        </table>
+        <p></p>
+        <hr color="#FF7F50">
+        <h2>
+            <font color="#FF7F50">Celdas de cabecera</font>
+        </h2>
+        <hr color="#FF7F50">
+        <p>Las celdas de cabecera son celdas que se crean para describir otras celdas con el atributo <font
+                color="blue"><i>th</i></font>
+        </p>
+        <hr color="#FF7F50">
+        <h2>
+            <font color="#FF7F50">Titulos en las tablas</font>
+        </h2>
+        <hr color="#FF7F50">
+        <p>Se pueden poner títulos en las tablas con la etiqueta <font color="blue"><i>caption</i></font>
+        </p> .<br> Por ejemplo : &lt;table border ="1"&gt;<br> &lt;caption&gt;Título&lt;/caption&gt;<br> &lt;tr&gt;<br>
+        &lt;td&gt;c1&lt;/td&gt;<br> &lt;td&gt;c2&lt;/td&gt;<br> &lt;td&gt;c3&lt;/td&gt;<br> &lt;td&gt;c4&lt;/td&gt;<br>
+        &lt;/tr&gt;<br> &lt;tr&gt;<br> &lt;td&gt;c5&lt;/td&gt;<br> &lt;td&gt;c6&lt;/td&gt;<br>
+        &lt;td&gt;c7&lt;/td&gt;<br> &lt;td&gt;c8&lt;/td&gt;<br> &lt;/tr&gt;<br> &lt;/table&gt;<br><br> y quedaría asi :
+        <br> <br>
+        <table border="1">
+            <caption>Título</caption>
+            <tbody>
+                <tr>
+                    <td>c1</td>
+                    <td>c2</td>
+                    <td>c3</td>
+                    <td>c4</td>
+                </tr>
+                <tr>
+                    <td>c5</td>
+                    <td>c6</td>
+                    <td>c7</td>
+                    <td>c8</td>
+                </tr>
+            </tbody>
+        </table>
+        <p></p>
+        <hr color="#FF7F50">
+        <h2>
+            <font color="#FF7F50">Etiquetas de agrupación de elementos en tablas</font>
+        </h2>
+        <hr color="#FF7F50">
+        <p>Existen tres elementos que diferencian las tres partes principales de la tabla </p>
+        <ul>
+            <li type="circle">
+                <font color="blue">thead</font> : Indica las filas que forman la cabecera.<br>
+            </li>
+            <li type="circle">
+                <font color="blue">tfoot</font> : Indica el pie de tabla.<br>
+            </li>
+            <li type="circle">
+                <font color="blue">tbody</font> : Indica el cuerpo de la tabla.<br>
+            </li>
+        </ul> Un ejemplo sería : <br><br> &lt;table border ="1"&gt;<br> &lt;thead&gt;<br>
+        &lt;caption&gt;Título1&lt;/caption&gt;<br> &lt;tr&gt;<br> &lt;td&gt;c1&lt;/td&gt;<br>
+        &lt;td&gt;c2&lt;/td&gt;<br> &lt;/tr&gt;<br> &lt;/thead&gt;<br> &lt;tfoot&gt;<br>
+        &lt;caption&gt;Título3&lt;/caption&gt;<br> &lt;tr&gt;<br> &lt;td&gt;c5&lt;/td&gt;<br>
+        &lt;td&gt;c6&lt;/td&gt;<br> &lt;/tr&gt;<br> &lt;/tfoot&gt;<br> &lt;tbody&gt;<br>
+        &lt;caption&gt;Título2&lt;/caption&gt;<br> &lt;tr&gt;<br> &lt;td&gt;c3&lt;/td&gt;<br>
+        &lt;td&gt;c4&lt;/td&gt;<br> &lt;/tr&gt;<br> &lt;/tbody&gt;<br> &lt;/table&gt;<br><br> <br> y quedaría de esta
+        manera : <br><br>
+        <table border="1">
+            <thead> </thead>
+            <caption>Título1</caption>
+            <tbody>
+                <tr>
+                    <td>c1</td>
+                    <td>c2</td>
+                </tr>
+            </tbody>
+            <tfoot> </tfoot>
+            <caption>Título2</caption>
+            <tbody>
+                <tr>
+                    <td>c5</td>
+                    <td>c6</td>
+                </tr>
+            </tbody>
+            <tbody> </tbody>
+            <caption>Título3</caption>
+            <tbody>
+                <tr>
+                    <td>c3</td>
+                    <td>c4</td>
+                </tr>
+            </tbody>
+        </table>
+        <p></p>
+        <hr color="#FF7F50">
+        <h2>
+            <font color="#FF7F50">Combinación de celdas y tablas dentro de tablas</font>
+        </h2>
+        <hr color="#FF7F50">
+        <p>Es posible unir celdas con los atributos <font color="blue"><i>colspan</i></font> y <font color="blue">
+                <i>rowspan</i></font>. <font color="blue"><i>colspan</i></font> une la celda actual con el número de
+            celdas a la derecha que se le haya indicado, mientras que <font color="blue"><i>rowspan</i></font> combina
+            las celdas indicadas hacia abajo.<br> Tambien podemos introducir elementos <font color="blue"><i>table</i>
+            </font> dentro de las tablas, lo que nos permite crear tablas de las formas que queramos. </p>
+    </div>
+    <div id="menu_modeloCajas">
+        <h1>3-6 MODELO DE CAJAS:</h1>
+        <p>La siguiente imagen representa el modelo de cajas:</p> <img src="modeloCajasEjemplo.PNG">
+        <p>Cada elemento se representa como una caja rectangular, en la que tienen los siguientes elementos:</p>
+        <h2>1- Width y Height</h2>
+        <p>Son el ancho y el alto de la caja. Ejemplo:</p>
+        <pre><code>         div {             width: 320px;             height: 320px;         }     </code></pre>
+        <h2>2- Padding</h2>
+        <p>Es el area alrededor del contenido. Es transparente. Ejemplo:</p>
+        <pre><code>         div {             padding: 25px;         }     </code></pre>
+        <h2>3- Border</h2>
+        <p>Es el borde entre el padding y el contenido. Suele tener 3 valores, el primero el ancho del borde (usualmente
+            en pixeles, pero puede tener otra unidad), el segundo el estilo (puede tener puntitos, rallas, guiones...) y
+            el tercero el color. Ejemplo:</p>
+        <pre><code>         div {             border: 25px solid green;         }     </code></pre>
+        <h2>4- Margin</h2>
+        <p>Es el margen exterior. Es transparente. Ejemplo:</p>
+        <pre><code>         div {             margin: 25px;         }     </code></pre>
+    </div>
+    <div id="menu_formularios">
+        <h1>3-7 FORMULARIOS:</h1>
+        <p>La etiqueta para los formularios que se utiliza en HTML es <code><form></form></code>. Dentro de ella se
+            utilizan los siguientes elementos:</p>
+        <h2>1- Imput:</h2>
+        <p>Son diferentes entradas de datos. Pueden ser los siguientes:</p>
+        <ul>
+            <li><strong>Tipo Text</strong>: Puedes introducir una sola linea de texto. Ejemplo:</li>
+            <pre><code>             <form>             First name:<br>             <input type="text" name="firstname"><br>             Last name:<br>             <input type="text" name="lastname">             </form>         </code></pre>
+            <li><strong>Tipo Password</strong>: El texto que introduzcas se verá censurado, porque es una contraseña.
+                Ejemplo:</li>
+            <pre><code>             <form>             User name:<br>             <input type="text" name="username"><br>             User password:<br>             <input type="password" name="psw">             </form>         </code></pre>
+            <li><strong>Tipo Submit</strong>: Es el boton enviar del formulario. Ejemplo:</li>
+            <pre><code>             <form action="/action_page.php">             First name:<br>             <input type="text" name="firstname" value="Mickey"><br>             Last name:<br>             <input type="text" name="lastname" value="Mouse"><br><br>             <input type="submit" value="Submit">             </form>         </code></pre>
+            <li><strong>Tipo Reset</strong>: Limpia el formulario y lo pone por defecto. Ejemplo:</li>
+            <pre><code>             <form action="/action_page.php">             First name:<br>             <input type="text" name="firstname" value="Mickey"><br>             Last name:<br>             <input type="text" name="lastname" value="Mouse"><br><br>             <input type="submit" value="Submit">             <input type="reset">             </form>         </code></pre>
+            <li><strong>Tipo Radio</strong>: Podemos crear varios input de tipo radio, la gracia de este es que solo se
+                puede seleccionar uno de ellos. Ejemplo:</li>
+            <pre><code>             <form>             <input type="radio" name="gender" value="male" checked> Male<br>             <input type="radio" name="gender" value="female"> Female<br>             <input type="radio" name="gender" value="other"> Other             </form>         </code></pre>
+            <li><strong>Tipo Checkbox</strong>: Podemos crear varios input de tipo Checkbox, podemos seleccionar todos
+                los que queramos. Ejemplo:</li>
+            <pre><code>             <form>             <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>             <input type="checkbox" name="vehicle2" value="Car"> I have a car             </form>         </code></pre>
+            <li><strong>Tipo Button</strong>: Crea un botón. Ejemplo:</li>
+            <pre><code>             <input type="button" onclick="alert('Hello World!')" value="Click Me!">         </code></pre>
+            <li><strong>Tipo Color</strong>: Abre una paleta de colores en la cual seleccionamos el que deseamos.
+                Ejemplo:</li>
+            <pre><code>             <form>             Select your favorite color:             <input type="color" name="favcolor">             </form>         </code></pre>
+            <li><strong>Tipo Date</strong>: Se nos abre un calendario en el cual seleccionamos una fecha. Ejemplo:</li>
+            <pre><code>             <form>             Birthday:             <input type="date" name="bday">             </form>         </code></pre>
+            <li><strong>Tipo Datetime-local</strong>: Es igual al tipo date a excepcion que este no usa la zona horaria
+                y no es compatible con todos los navegadores. Ejemplo:</li>
+            <pre><code>             <form>             Birthday (date and time):             <input type="datetime-local" name="bdaytime">             </form>         </code></pre>
+            <li><strong>Tipo Email</strong>: Verifica que el texto que le hemos introducido es un correo electronico,
+                buscando usuario@dominio.com. Ejemplo:</li>
+            <pre><code>             <form>             E-mail:             <input type="email" name="email">             </form>         </code></pre>
+            <li><strong>Tipo File</strong>: Con el puedes subir un archivo al formulario. Ejemplo:</li>
+            <pre><code>             <form>             Select a file: <input type="file" name="myFile">             </form>         </code></pre>
+            <li><strong>Tipo Month</strong>: Se ultiliza para seleccionar el mes y el año. Ejemplo:</li>
+            <pre><code>             <form>             Birthday (month and year):             <input type="month" name="bdaymonth">             </form>         </code></pre>
+            <li><strong>Tipo Number</strong>: Comprueba que el texto que le hemos introducido es un numero, se pueden
+                aplicar restricciones. Ejemplo:</li>
+            <pre><code>             <form>             Quantity (between 1 and 5):             <input type="number" name="quantity" min="1" max="5">             </form>         </code></pre>
+            <li><strong>Tipo Range</strong>: Se creará un "Slider" en el cual seleccionamos un valor. Ejemplo:</li>
+            <pre><code>             <form>             <input type="range" name="points" min="0" max="10">             </form>         </code></pre>
+            <li><strong>Tipo Search</strong>: Se utiliza para introducir un texto a buscar. Ejemplo:</li>
+            <pre><code>             <form>             Search Google:             <input type="search" name="googlesearch">             </form>         </code></pre>
+            <li><strong>Tipo Tel</strong>: Se utiliza para introducir un telefono. Actualmente solo se utiliza para
+                Safari. Ejemplo:</li>
+            <pre><code>             <form>             Telephone:             <input type="tel" name="usrtel">             </form>         </code></pre>
+            <li><strong>Tipo Time</strong>: Se utiliza para seleccionar una hora. Ejemplo:</li>
+            <pre><code>             <form>             Select a time:             <input type="time" name="usr_time">             </form>         </code></pre>
+            <li><strong>Tipo Url</strong>: Comprueba que el texto que le hemos introducido es una url. Ejemplo:</li>
+            <pre><code>             <form>             Add your homepage:             <input type="url" name="homepage">             </form>         </code></pre>
+            <li><strong>Tipo Week</strong>: En el seleccionas una semana y un año. Hay algunos navegadores que no lo
+                soportan. Ejemplo:</li>
+            <pre><code>             <form>             Select a week:             <input type="week" name="week_year">             </form>         </code></pre>
+        </ul>
+        <h2>2- Select:</h2>
+        <p>En el se escriben una serie de opciones. Estas se mostraran apiladas hacia abajo y solo podremos seleccionar
+            una. Ejemplo:</p>
+        <pre><code>         <select name="cars">         <option value="volvo">Volvo</option>         <option value="saab">Saab</option>         <option value="fiat">Fiat</option>         <option value="audi">Audi</option>         </select>     </code></pre>
+        <h2>3- Textarea:</h2>
+        <p>En el se puede escribir un fragmento de texto. Ejemplo:</p>
+        <pre><code>         <textarea name="message" rows="10" cols="30">         The cat was playing in the garden.         </textarea>     </code></pre>
+        <h2>4- Button:</h2>
+        <p>Se crea un botón. Ejemplo:</p>
+        <pre><code>         <button type="button" onclick="alert('Hello World!')">Click Me!</button>     </code></pre>
+        <h2>5- DataList:</h2>
+        <p>Se crea una lista de posibles respuestas al input. Ejemplo:</p>
+        <pre><code>         <input list="browsers">         <datalist id="browsers">         <option value="Internet Explorer">         <option value="Firefox">         <option value="Chrome">         <option value="Opera">         <option value="Safari">         </datalist>     </code></pre>
+        <h2>6- Output:</h2>
+        <p>Hace un cálculo matemático y muestra el resultado. Ejemplo:</p>
+        <pre><code>         <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0         <input type="range" id="a" value="50">100         +<input type="number" id="b" value="50">         =<output name="x" for="a b"></output>         </form>     </code></pre>
+        <h2>7- Atributos:</h2>
+        <h2>Estos atributos se pueden agregar a los <code><input></input></code>:</h2>
+        <ul>
+            <li>
+                <p><strong>Atributo Value</strong>: Le asigna un valor inicial.</p>
+            </li>
+            <li>
+                <p><strong>Atributo readonly</strong>: No puede ser cambiado el input. </p>
+            </li>
+            <li>
+                <p><strong>Atributo disabled</strong>: Se desactiva el input. Hasta que no se activa no se puede enviar
+                    el formulario.</p>
+            </li>
+            <li>
+                <p><strong>Atributo size</strong>: El tamaño del input.</p>
+            </li>
+            <li>
+                <p><strong>Atributo maxlength</strong>: El tamaño máximo del input.</p>
+            </li>
+            <li>
+                <p><strong>Atributo autofocus</strong>: El navegador al cargar la página automaticamente se centrará en
+                    un input.</p>
+            </li>
+            <li>
+                <p><strong>Atributo form</strong>: Le asigna un formulario al input.</p>
+            </li>
+            <li>
+                <p><strong>Atributo formaction</strong>: Especifica una url a la que se enviará el formulario.</p>
+            </li>
+            <li>
+                <p><strong>Atributo formenctype</strong>: Especifica como deben de ser tratados los datos al enviarlos.
+                    (Solo method="post").</p>
+            </li>
+            <li>
+                <p><strong>Atributo formmethod</strong>: Especifica el metodo de enviar el formulario.</p>
+            </li>
+            <li>
+                <p><strong>Atributo Novalidate</strong>: No es necesario validar los datos al enviar el formulario.</p>
+            </li>
+            <li>
+                <p><strong>Atributo formnovalidate</strong>: Sobreescribe el atributo novalidate del elemento
+                    <code><form></form></code>.</p>
+            </li>
+            <li>
+                <p><strong>Atributo height y width</strong>: Se utiliza para el tamaño de las imagenes.</p>
+            </li>
+            <li>
+                <p><strong>Atributo min y max</strong>: Es el mínimo y máximo de un input.</p>
+            </li>
+            <li>
+                <p><strong>Atributo placeholder</strong>: Es una descripción corta de lo que debemos introducir en ese
+                    input. Al hacer clic o escribir algo en el input se borra.</p>
+            </li>
+            <li>
+                <p><strong>Atributo required</strong>: Obligatoriamente deberemos de rellenar el campo con este
+                    atributo.</p>
+            </li>
+            <li>
+                <p><strong>Atributo step</strong>: Define que lo que debemos introducir es un rango de numeros. Por
+                    ejemplo, si el step=3 los números válidos serian -3, 0, 3, 6...</p>
+            </li>
+            <li>
+                <p><strong>Atributo pattern</strong>: Podemos definir un patrón personalizado para el input.</p>
+            </li>
+            <li>
+                <p><strong>Atributo multiple</strong>: Podemos introducir varios valores en el input con este atributo.
+                </p>
+            </li>
+        </ul>
+        <h2>Estos atributos se pueden agregar a al <code><form></form></code>:</h2>
+        <ul>
+            <li>
+                <p><strong>Atributo AutoComplete</strong>: El navegador puede completar los campos automaticamente con
+                    datos anteriormente introducidos.</p>
+            </li>
+            <li>
+                <p><strong>Atributo Action</strong>: Es lo que queremos que se haga cuando se envia el formulario.
+                    Ejemplo:</p>
+            </li>
+            <pre><code>                 <form action="/action_page.php">             </code></pre>
+            <li><strong>Atributo Target</strong>: Cuando envias el formulario se te abrirá esta página. Ejemplo:</li>
+            <pre><code>                 <form action="/action_page.php" target="_blank">             </code></pre>
+            <li><strong>Atributo Method</strong>: Metodo get o post. Ejemplos:</li>
+            <pre><code>                 <form action="/action_page.php" method="get">                 <form action="/action_page.php" method="post">             </code></pre>
+        </ul>
+        <h2>8- Fieldset:</h2>
+        <p>Se suele utilizar para agrupar los datos por grupos, como datos personales, direccion ... Visualmente se ve
+            una linea alrededor de los datos. Ejemplo:</p>
+        <pre><code>             <form action="/action_page.php">             <fieldset>             <legend>Personal information:</legend>             First name:<br>             <input type="text" name="firstname" value="Mickey"><br>             Last name:<br>             <input type="text" name="lastname" value="Mouse"><br><br>             <input type="submit" value="Submit">             </fieldset>             </form>         </code></pre>
+    </div>
+    <div id="menu_enlaces">
+        <header>
+            <meta http-equiv="refresh" content="5" />
+            <h2 id="Inicio">3.8 Enlaces</h2>
+            <hr color="#FF7F50">
+            <p>Lo que caracteriza a la web como medio de comunicación es la navegación por medio de hipervínculos
+                (enlaces).<br>
+                Esta conexión entre archivos permite al usuario elegir el sentido de la navegación.</p><br>
+            <p>En HTML5, los enlaces se marcan con la etiqueta <span style="color: blue;">&lt;a&gt; &lt;/a&gt;</span> y
+                el
+                atributo
+                principal es <span style="color: blue;">href=""</span> , donde se escribe la <br>
+                ubicación del archivo de destino, el cual puede estar en la misma carpeta que el archivo que lo está
+                llamando,
+                en otra
+                carpeta, o en un sitio web.</p>
+        </header>
+
+
+        <p>Dentro de las etiquetas <span style="color: blue;">&lt;a href=""&gt;&lt;/a&gt;</span> se puede colocar
+            cualquier
+            elemento html,
+            el cual funcionará como botón (generalmente se suele colocar un texto o una imagen).<br>
+            Si es un texto, el navegador por defecto lo muestra en color azul y subrayado.<br>
+            Si es una imagen, algunos navegadores le suelen agregar un borde azul.</p>
+
+
+        <h2>Tipos de enlaces</h2>
+        <hr color="#FF7F50">
+        Existen diferentes tipos de enlaces que detallamos a continuación:
+
+        <h3>Enlaces externos</h3>
+        <hr color="#FF7F50">
+        <p>Son los enlaces entre diferentes sitios web. Si queremos vincular un sitio web con otro, tenemos que indicar
+            la ruta
+            absoluta del sitio escribiendo la url completa.<br>
+            La ruta es el valor que se escribe dentro del atributo href="", y se puede clasificar en rutas absolutas o
+            relativas.</p>
+        <p>Las rutas absolutas, como ya hemos visto, son las que definen la ubicación completa de un archivo en la web,
+            y
+            empiezan
+            desde http://nombredelsitio.com/.../archivo.extensión <br>
+            Las rutas relativas, en cambio, definen la ubicación del archivo de destino en relación a la ubicación del
+            archivo
+            que lo
+            está llamando.<br></p>
+        Pongamos unos ejemplos:<br><br>
+        <p>Ruta absoluta:<br>
+            <code>
+            &lt;a href="https://www.https://www.iesvirgendelcarmen.com/moodle/course/index.php?categoryid=23"&gt;Moodle Virgen del Carmen&lt;/a&gt;
+        </code><br><br>
+            La cual genera este enlace: <a
+                href="https://www.https://www.iesvirgendelcarmen.com/moodle/course/index.php?categoryid=23">Moodle
+                Virgen del
+                Carmen</a></p>
+
+        En algunos casos, se suele usar el atributo target="" , que nos permite abrir el enlace en una pestaña nueva.
+        Por
+        ejemplo, <br><br>
+        <code>
+                &lt;a href="http://google.com" target="_blank&gt;Google en una nueva pestaña&lt;/a&gt;
+            </code><br><br>
+        Genera este enlace: <a href="http://google.com" target="_blank">Google en una nueva pestaña</a></p><br>
+
+
+        <h3>Enlaces internos entre archivos .html</h3>
+        <hr color="#FF7F50">
+        Son los enlaces principales de un sitio. Si en el archivo index.html, queremos agregar un vínculo a Página de
+        prueba.html, el
+        código sería así:
+        <p>Ruta relativa:<br>
+            <code>
+                &lt;a href="../extra/Página de prueba.html"&gt;Página de prueba&lt;/a&gt;
+            </code><br><br>
+            La cual genera este enlace: <a href="../extra/Página de prueba.html">Página de prueba</a></p><br>
+
+        <h3>Enlaces internos: anclas</h3>
+        <hr color="#FF7F50">
+        <p>Las anclas son enlaces hacia un punto determinado dentro de un html. Se usa en varios casos, por ejemplo en
+            una<br>
+            página de preguntas frecuentes, donde las respuestas están desarrolladas debajo de las preguntas (foros con
+            posts de
+            respuestas).<br>
+            También en los textos largos, al finalizar muchas veces se coloca un botón para subir, lo cual es un ancla.
+        </p>
+
+        <p>El punto de destino tiene que estar marcado con el atributo id="algo" , y en el enlace se coloca un numeral
+            (#)
+            seguido del nombre. Por ejemplo:<br><br>
+            <a href="#Inicio">Inicio de la página</a><br>
+            con código: &nbsp;&nbsp;&nbsp;
+            <code>
+            &lt;a href="#Inicio"&gt;Inicio de la página&lt;/a&gt;&lt;br&gt;
+        </code><br>
+
+            <p>"salta" a este párrafo colocado en el inicio de esta página:<br><br>
+                &lt;p id="Inicio"&gt;Inicio de la página&lt;/p&gt;&lt;/p&gt;</p><br>
+
+            <h3>Enlaces a una dirección de correo</h3>
+            <hr color="#FF7F50">
+            <p>Se puede vincular una dirección de correo para que abra el programa de correo predeterminado. El código
+                sería:<br><br>
+                Consúltenos a &lt;a href="mailto:info@iesvirgendelcarmen.com"&gt;info@iesvirgendelcarmen.com&lt;/a&gt;
+            </p>
+            Que produce como resultado: &nbsp;
+            Consúltenos a<a href="mailto:info@iesvirgendelcarmen.com"> info@iesvirgendelcarmen.com</a></p><br>
+        <p>Se le puede añadir más contenido al mensaje, añadiendo '?' al final del correo, y separando los siguientes
+            valores
+            con '&'. <br>
+            Algunos valores que podemos añadir son: 'subject', 'body', 'cc' para copia, 'bcc' para copia oculta...<br>
+            Veámoslo con el mismo ejemplo de antes:<br><br>
+            Consúltenos a &lt;a
+            href="mailto:info@iesvirgendelcarmen.com?subject=Duda&body=Buenos%20Días,%20"&gt;info@iesvirgendelcarmen.com&lt;/a&gt;
+        </p>
+        Que produce como resultado: &nbsp;
+        Consúltenos a<a href="mailto:info@iesvirgendelcarmen.com?subject=Duda&body=Buenos%20Días,%20">
+            info@iesvirgendelcarmen.com</a><br><br>
+        En nuestro ordenador, se nos abriría la ventana del correo electrónico tal que así:<br><br>
+        <img src="img/correo.png" alt="Correo" width="800" height="400">
+        </p>
+        <p>Este recurso está bastante cuestionado, debido a dos razones: <br> Primero porque muchos usuarios utilizan
+            correo
+            webmail (Gmail, Yahoo, Hotmail) por lo que este enlace no les sirve;<br>
+            Y segundo porque estamos facilitando a robots que encuentren nuestro correo y lo incluyan en una base de
+            datos para
+            spam.</p><br>
+
+
+        <h3>Enlaces para ampliar una imagen</h3>
+        <hr color="#FF7F50">
+
+        <p>Es muy común tener en nuestra página web una galería con miniaturas de fotos que vinculan a imágenes
+            ampliadas.<br>
+            Si combinamos este recurso con código javascript, logramos galerías de fotos muy atractivas. El código HTML
+            sería
+            así:<br><br>
+            <code>
+            &lt;a href="img/IES.jpg"&gt;&lt;img src="img/IES-miniatura.jpg" alt="Entrada del IES Virgen del Carmen"&gt;&lt;/a&gt;
+        </code></p><br>
+        Que produciría como salida la imagen en miniatura: &nbsp;&nbsp;&nbsp;
+        <a href="img/IES.jpg"><img src="img/IES-miniatura.jpg" alt="Entrada del IES Virgen del Carmen"></a><br><br>
+        Donde podemos hacer click y se nos mostrará la imagen ampliada.</p><br>
+
+        <h3>Enlaces para descargar archivos</h3>
+        <hr color="#FF7F50">
+        <p>Esto es mas de lo mismo ya visto en los anteriores apartados, puesto que dentro del atributo href=""
+            procedemos a
+            colocar la ruta del archivo.<br>
+            Puesto que el navegador no puede abrir en su interior archivos tales como .zip o .rar, éste los descarga en
+            el
+            ordenador del usuario.<br>
+            Veámoslo con un ejemplo:</p>
+        <code>
+                &lt;a href="img/img.zip"&gt;Descarga todas las fotos vistas en esta sección del manual&lt;/a&gt;
+            </code></p><br>
+        Generará el enlace siguiente:&nbsp;&nbsp;&nbsp;
+        <a href="img/img.zip">Descarga todas las fotos vistas en esta sección del manual</a>
+    </div>
+    <div id="menu_multimedia">
+
+    </div>
+    <div id="menu_canvas">
+
+    </div>
+</body>
+
+</html>
