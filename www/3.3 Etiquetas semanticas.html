@@ -1,0 +1,155 @@
+<header>
+	<h2>3.3 Etiquetas semánticas de HTML5</h2>
+	<hr color="#FF7F50">
+	<p>Procedamos a ver las etiquetas semánticas de HTML5.<br>
+		Lo primero,es tener actualizado el ordenador, ya que HTML5 es una nueva version de HTML, y muchos navegadores no
+		soportan estos cambios.</p><br>
+</header>
+<section>
+	<article>
+		<h3>Definición</h3>
+		<hr color="#FF7F50">
+		<p>Una etiqueta se califica como semántica si nos informa sobre lo que va a tratar su contenido.<br>
+			Las etiquetas semánticas ayudan a definir la estructura del documento, y permiten una mejor indexacion de
+			las paginas. Un ejemplo es la etiqueta &lt;SECTION&gt;,<br>
+			la cual nos dice QUÉ contiene una sección o capítulo dentro de la página.</p>
+		<p>Frente a las etiquetas semánticas tenemos otros tipos de etiquetas, como las que afectan al formato
+			(&lt;UL&gt;), las que afectan a multimedia (como &lt;VIDEO&gt;), etc.</p>
+		<p>El uso de las etiquetas semánticas es bastante simple e intuitivo, y se pueden colocar dentro del texto como
+			se desee, sin existir reglas sobre su colocación. Pero tampoco podemos olvidar que <br>
+			son utilizadas para mejorar la indexación de la página, por lo que debemos colocarlas con lógica.</p>
+		<p>También hay que aclarar que las etiquetas semánticas no añaden ningún formato, ni cambian el tipo de letra,
+			ya que podríamos pensar que &lt;HEADER&gt; nos cambiaría el tamaño de letra.<br>
+			El formato lo definiremos posteriormente con CSS.
+
+			<p>Antes de la creación de estas nuevas etiquetas, se utilizaban las etiquetas DIV, las cuales no aportaban
+				información al tema, salvo que se utilizasen con propiedades ID o CLASS, como por ejemplo: &nbsp; <span
+					style="color: blue;">&lt;DIV CLASS = "Cabecera"&gt;</span></p><br>
+	</article>
+	<article>
+		<h3>Tipos de etiquetas</h3>
+		<hr color="#FF7F50">
+		Las que vamos a estudiar más a fondo son:
+		&lt;HEADER&gt;, &lt;NAV&gt;, &lt;SECTION&gt;, &lt;ARTICLE&gt;, &lt;ASIDE&gt;, &lt;FOOTER&gt;, &lt;FIGURE&gt; y
+		&lt;FIGCAPTION&gt;<br>
+		<p>El esquema de una página con etiquetas semánticas podría ser el siguiente.</p>
+
+		<img src="img/estructura-html5.jpg" alt="estructura html5" width="400" height="200">
+
+		<p><span style="color: blue;">&lt;HEADER&gt; </span></p>
+		<p>Se utiliza como una introducción del elemento que la contiene. El HEADER suele llevar el título, la
+			descripción corta y el logo de la página.<br>
+			Si colocamos un HEADER dentro del BODY, será una introducción de toda la página. Si colocamos un HEADER
+			dentro de un SECTION, contendrá una introducción a esa
+			sección.<br></p>
+
+		<p>El HEADER no es equivalente a la parte superior de la página, aunque frecuentemente está en esa posición.<br>
+			El HEADER por si mismo no separa contenidos, por lo que no se debe utilizar aislado, sino dentro de otra
+			etiqueta.<br>
+			Es bastante frecuente utilizar las etiquetas H1, H2, ... para escribir los títulos dentro del HEADER.</p>
+
+		<p><span style="color: blue;">&lt;SECTION&gt; </span></p>
+
+		<p>Una SECTION agrupa contenido con un tema común; como por ejemplo, las diferentes partes de un periódico:
+			política, sociedad, deportes, ...<br>
+
+			Cada SECTION puede estar encabezada por una etiqueta H1, H2,... dentro de una SECTION suelen haber etiquetas
+			ARTICLE, DIV o P.<br></p>
+		Por ejemplo, un artículo de prensa sobre futbol dentro de la sección de deportes.<br>
+		Una SECTION no debe ser usada con el único fin de dar formato, para eso se utiliza la etiqueta &lt;DIV&gt;.
+
+		<p><span style="color: blue;">&lt;ARTICLE&gt; </span></p>
+
+		<p>Representa una unidad de contenido, es decir, contenido que responde a un tema concreto.<br> El ejemplo más
+			claro es
+			un artículo dentro de una revista, o también, si nos situamos en un foro, un ARTICLE sería un post.</p>
+
+		Se pueden anidar un ARTICLE dentro de otro ARTICLE. Dentro de un ARTICLE, el contenido se suele estructurar con
+		las etiquetas &lt;DIV&gt; y &lt;P&gt;.
+		<p><span style="color: blue;">&lt;NAV&gt; </span></p>
+
+		Esta etiqueta está pensada para contener la barra de navegación, o los enlaces a páginas de ese sitio
+		web.<br><br>
+
+		Se suele colocar en la parte superior de la página, o en un lateral. <br>Suele estar formada por una lista de
+		enlaces
+		con las etiquetas &lt;UL&gt; y &lt;LI&gt;.
+
+		<p><span style="color: blue;">&lt;ASIDE&gt; </span></p>
+
+		<p>Esta etiqueta está diseñada para contenido suplementario, es decir, menos importante que el cuerpo de la
+			página,
+			ya que se coloca en un lateral de ésta.</p>
+		Esta etiqueta puede contener un tema relacionado indirectamente con el tema principal, como una reseña de un
+		autor;
+		o puede contener un tema no relacionado, como en el caso de publicidad.
+
+		<p><span style="color: blue;">&lt;FOOTER&gt; </span></p>
+
+		Normalmente, esta etiqueta se coloca al final de la página, y contiene información del tipo: autor, copyright,
+		contacto, mapa del sitio, etc.<br><br>
+
+		<p>Recapitulando, mostremos un ejemplo de todo lo visto hasta ahora:</p>
+		<code>
+		&lt;body&gt;<br><br>
+		&nbsp;&nbsp;&nbsp;&lt;header&gt;<br>
+		&nbsp;&nbsp;&nbsp;&lt;h1&gt;Recetas&lt;/h1&gt;<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;nav&gt;<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;Carnes&lt;/a&gt;<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;Pescados&lt;/a&gt;<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/nav&gt;<br>
+		&nbsp;&nbsp;&nbsp;&lt;/header&gt;<br><br>
+
+		&nbsp;&nbsp;&nbsp;&lt;section&gt;<br>
+		&nbsp;&nbsp;&nbsp;&lt;h2&gt;Recetas de carne&lt;/h2&gt;<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;article&gt;<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Conejo al ajillo&lt;/h3&gt;<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Explicación de la receta 1&lt;/p&gt;<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/article&gt;<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;article&gt;<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Choto a la brasa&lt;/h3&gt;<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Explicación de la receta 2&lt;/p&gt;<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/article&gt;<br>
+		&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br><br>
+		&nbsp;&nbsp;&nbsp;&lt;section&gt;<br>
+		&nbsp;&nbsp;&nbsp;&lt;h2&gt;Recetas de pescado&lt;/h2&gt;<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;article&gt;<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Dorada a la sal&lt;/h3&gt;<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Explicación de la receta 3&lt;/p&gt;<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/article&gt;<br>
+		&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br><br>
+
+		&nbsp;&nbsp;&nbsp;&lt;aside&gt;<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Publicidad de vodafone&lt;/p&gt;<br>
+		&nbsp;&nbsp;&nbsp;&lt;/aside&gt;<br><br>
+
+		&nbsp;&nbsp;&nbsp;&lt;footer&gt;<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Autores: los ScrumMasters&lt;/p&gt;<br>
+		&nbsp;&nbsp;&nbsp;&lt;/footer&gt;<br>
+		&lt;/body&gt;<br><br>
+	</code>
+		<p><span style="color: blue;">Otras etiquetas...</span></p>
+
+		<p>Aquí podemos resaltar unas nuevas etiquetas semánticas, como:<br><br> la etiqueta &lt;FIGURE&gt; usada para
+			imágenes y
+			gráficos,<br>
+			la etiqueta &lt;FIGCAPTION&gt; que es un pie de imagen, <br>la etiqueta &lt;TIME&gt; para definir fechas y
+			horas,<br>
+			y las etiquetas &lt;MAIN&gt;, &lt;MARK&gt;, &lt;SUMARY&gt; Y &lt;DETAILS&gt;.</p>
+
+		Veamos un ejemplo con el código con el que vamos a usar estas etiquetas:<br><br>
+		<code>
+		&lt;figure&gt;<br>
+		&nbsp;&nbsp;&nbsp;&lt;img src="img/IES.jpg" alt="IES Virgen del Carmen" width="500" height="300"&gt;<br>
+		&nbsp;&nbsp;&nbsp;&lt;figcaption&gt;Fig.1 - Entrada del instituto Virgen del Carmen de
+		Jaén.&lt;/figcaption&gt;<br>
+		&lt;/figure&gt;<br><br>
+		</code>
+		Ésto produce como resultado en pantalla:
+		<figure>
+			<img src="img/IES.jpg" alt="IES Virgen del Carmen" width="500" height="300">
+			<figcaption>Fig.1 - Entrada del instituto Virgen del Carmen de Jaén.</figcaption>
+		</figure>
+
+	</article>
+</section>
