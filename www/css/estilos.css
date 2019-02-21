@@ -1,0 +1,21 @@
+nav {
+    margin-bottom: 5%;
+
+}
+.panel { 
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+footer {
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    width:100%;
+}
+
+body {
+    background-color: #AFAFAF;
+}
