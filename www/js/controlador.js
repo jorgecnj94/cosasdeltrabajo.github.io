@@ -34,6 +34,7 @@ $.controlador.init = function (panel_inicial) {
 
         $("#" + menu_id).click(function () {
             $.controlador.activarPanel("#" + panel_id);
+            $('.navbar-collapse').collapse('hide');
         });
         console.log("id_menu::" + menu_id + "  id_panel" + panel_id);
     });
