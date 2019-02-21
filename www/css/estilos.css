@@ -1,16 +1,17 @@
 nav {
-    margin-bottom: 5%;
-
+    margin-top: 0px;
+    
+	
 }
 .panel { 
-    margin-top: 5%;
+    margin-top: 8%;
     margin-bottom: 5%;
     margin-left: 8%;
     margin-right: 8%;
 }
 
 footer {
-    position:fixed;
+    position:block;
     left:0px;
     bottom:0px;
     width:100%;
