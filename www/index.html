@@ -23,7 +23,7 @@
 <body>
 
     <nav class="navbar navbar-dark text-light bg-dark fixed-top">
-        <a class="navbar-brand">LMSGI: Trabajo HTML </a>
+        <a class="navbar-brand"><font size=3>LMSGI: Trabajo HTML</font> </a>
         
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mi_menu"
             aria-controls="mi_menu" aria-expanded="false" aria-label="Abrir menú">
@@ -81,10 +81,13 @@
 <!-- MANUAL HTML -->
 <main class="container-fluid">
 
+    <div id="contenido">
     <div id="panel_inicio" class="panel">
        
+    <div class="d-block d-sm-block d-md-none" id="pruebas">.</div>
+    
         <!-- Carrusel de imagenes -->
-            <div id="carrusel1" class="carousel slide" data-ride="carousel">
+            <div id="carrusel1" class="carousel slide d-none d-sm-none d-md-block" data-ride="carousel">
                     <ul class="carousel-indicators">
                         <li data-target="#carrusel1" data-slide-to="0" class="active"></li>
                         <li data-target="#carrusel1" data-slide-to="1"></li>
@@ -100,6 +103,16 @@
                   </div>
 
     </div>
+
+    <div class="d-block d-sm-block d-md-none">
+        <img src="img/modomovil.png" height="100%" width="100%">
+        <p>Estás usando la versión de movil de esta página.
+            Bienvendo al Manual de HTML y accesiblidad.
+            ¡Esperemos que aprendas mucho con nosotros!
+        </p>
+    </div>
+
+
 
 <!-- 3.1 Estructura básica "Alejandro Cobo" -->
     <div id="panel_estructuraBasica" class="panel">
@@ -2874,7 +2887,7 @@
         </ul>
 
 </div>
-
+</div>
 </main>
 <footer class="page-footer font-small text-light pt-1 bg-dark">
 

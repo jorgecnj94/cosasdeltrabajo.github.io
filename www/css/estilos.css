@@ -1,7 +1,7 @@
 nav {
     margin-top: 0px;
     margin-bottom: 2px;
-    
+    position: relative;
 	
 }
 .panel { 
@@ -9,6 +9,10 @@ nav {
     margin-bottom: 5%;
     margin-left: 8%;
     margin-right: 8%;
+}
+
+#pruebas{
+    margin-top: 20%;
 }
 
 
