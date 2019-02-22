@@ -1,5 +1,6 @@
 nav {
     margin-top: 0px;
+    margin-bottom: 2px;
     
 	
 }
@@ -10,11 +11,14 @@ nav {
     margin-right: 8%;
 }
 
+
+
 footer {
-    position:block;
+    position: fixed;
     left:0px;
     bottom:0px;
     width:100%;
+    
 }
 
 body {
