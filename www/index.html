@@ -86,6 +86,7 @@
        
     <div class="d-block d-sm-block d-md-none" id="pruebas">.</div>
     
+	
         <!-- Carrusel de imagenes -->
             <div id="carrusel1" class="carousel slide d-none d-sm-none d-md-block" data-ride="carousel">
                     <ul class="carousel-indicators">
@@ -101,16 +102,19 @@
                     <a class="carousel-control-prev" href="#carrusel1" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
                     <a class="carousel-control-next" href="#carrusel1" data-slide="next"><span class="carousel-control-next-icon"></span></a>
                   </div>
+				  
+		<!-- Modo movil -->	  
+                 <div class="d-block d-sm-block d-md-none">
+                    <img src="img/modomovil.png" height="100%" width="100%">
+                    <p>Estás usando la versión de movil de esta página.
+                        Bienvendo al Manual de HTML y accesiblidad.
+                        ¡Esperemos que aprendas mucho con nosotros!
+                    </p>
+                </div>
 
     </div>
 
-    <div class="d-block d-sm-block d-md-none">
-        <img src="img/modomovil.png" height="100%" width="100%">
-        <p>Estás usando la versión de movil de esta página.
-            Bienvendo al Manual de HTML y accesiblidad.
-            ¡Esperemos que aprendas mucho con nosotros!
-        </p>
-    </div>
+
 
 
 
@@ -144,7 +148,7 @@
                 </div>
                 <div>
                     <h3>Títulos o encabezamientos en HTML:</h3>
-                    <table width="580" cellspacing="0" cellpadding="0" border="0">
+                    <table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
                         <tr>
                             <td width="50%"><strong>Etiqueta</strong></td>
                             <td width="50%"><strong>Visualización</strong></td>
@@ -178,7 +182,7 @@
                 </div>
                 <div>
                     <h3>Estilos de fuentes en HTML:</h3>
-                    <table width="580" cellspacing="1" cellpadding="0" border="0">
+                    <table " cellspacing="1" width="100%" height="100%" cellpadding="0" border="0">
                         <tr>
                             <td><strong>Etiqueta</strong></td>
                             <td><strong>Visualización</strong></td>
@@ -406,7 +410,7 @@
                 &lt;FIGCAPTION&gt;<br>
                 <p>El esquema de una página con etiquetas semánticas podría ser el siguiente.</p>
 
-                <img src="img/estructura-html5.jpg" alt="estructura html5" width="400" height="200"><br><br>
+                <img src="img/estructura-html5.jpg" alt="estructura html5" height="100%" width="100%"><br><br>
 
                 <p><span style="color: blue;">&lt;HEADER&gt; </span></p>
                 <p>Se utiliza como una introducción del elemento que la contiene. El HEADER suele llevar el título, la
@@ -528,14 +532,14 @@
                 Veamos un ejemplo con el código con el que vamos a usar estas etiquetas:<br><br>
                 <code>
                 &lt;figure&gt;<br>
-                &nbsp;&nbsp;&nbsp;&lt;img src="img/IES.jpg" alt="IES Virgen del Carmen" width="500" height="300"&gt;<br>
+                &nbsp;&nbsp;&nbsp;&lt;img src="img/IES.jpg" alt="IES Virgen del Carmen" height="100%" width="100%"&gt;<br>
                 &nbsp;&nbsp;&nbsp;&lt;figcaption&gt;Fig.1 - Entrada del instituto Virgen del Carmen de
                 Jaén.&lt;/figcaption&gt;<br>
                 &lt;/figure&gt;<br><br>
                 </code>
                 Ésto produce como resultado en pantalla:
                 <figure>
-                    <img src="img/IES.jpg" alt="IES Virgen del Carmen" width="500" height="300">
+                    <img src="img/IES.jpg" alt="IES Virgen del Carmen" height="100%" width="100%">
                     <figcaption>Fig.1 - Entrada del instituto Virgen del Carmen de Jaén.</figcaption>
                 </figure>
 
@@ -837,7 +841,7 @@
     <div id="panel_modeloCajas" class="panel">
             <h1>3-6 MODELO DE CAJAS:</h1>
             <p>La siguiente imagen representa el modelo de cajas:</p>
-            <img src="img/modeloCajasEjemplo.PNG">
+            <img src="img/modeloCajasEjemplo.PNG" height="100%" width="100%">
         
             <p>Cada elemento se representa como una caja rectangular, en la que tienen los siguientes elementos:</p>
         
@@ -1262,7 +1266,8 @@
             <hr color="#FF7F50">
             <p>Se puede vincular una dirección de correo para que abra el programa de correo predeterminado. El código
                 sería:<br><br>
-                Consúltenos a &lt;a href="mailto:info@iesvirgendelcarmen.com"&gt;info@iesvirgendelcarmen.com&lt;/a&gt;
+				<code><pre>Consúltenos a &lt;a href="mailto:info@iesvirgendelcarmen.com"&gt;info@iesvirgendelcarmen.com&lt;/a&gt;</pre></code>
+                
             </p>
             Que produce como resultado: &nbsp;
             Consúltenos a<a href="mailto:info@iesvirgendelcarmen.com"> info@iesvirgendelcarmen.com</a></p><br>
@@ -1271,14 +1276,15 @@
             con '&'. <br>
             Algunos valores que podemos añadir son: 'subject', 'body', 'cc' para copia, 'bcc' para copia oculta...<br>
             Veámoslo con el mismo ejemplo de antes:<br><br>
-            Consúltenos a &lt;a
-            href="mailto:info@iesvirgendelcarmen.com?subject=Duda&body=Buenos%20Días,%20"&gt;info@iesvirgendelcarmen.com&lt;/a&gt;
+      
+			<code><pre> Consúltenos a &lt;a
+            href="mailto:info@iesvirgendelcarmen.com?subject=Duda&body=Buenos%20Días,%20"&gt;info@iesvirgendelcarmen.com&lt;/a&gt; </pre></code>
         </p>
         Que produce como resultado: &nbsp;
         Consúltenos a<a href="mailto:info@iesvirgendelcarmen.com?subject=Duda&body=Buenos%20Días,%20">
             info@iesvirgendelcarmen.com</a><br><br>
         En nuestro ordenador, se nos abriría la ventana del correo electrónico tal que así:<br><br>
-        <img src="img/correo.png" alt="Correo" width="800" height="400">
+        <img src="img/correo.png" alt="Correo" height="100%" width="100%">
         </p>
         <p>Este recurso está bastante cuestionado, debido a dos razones: <br> Primero porque muchos usuarios utilizan
             correo
@@ -1297,10 +1303,10 @@
             sería
             así:<br><br>
             <code>
-            &lt;a href="img/IES.jpg"&gt;&lt;img src="img/IES-miniatura.jpg" alt="Entrada del IES Virgen del Carmen"&gt;&lt;/a&gt;
+            &lt;a href="img/IES.jpg"&gt;&lt;img src="img/IES-miniatura.jpg" alt="Entrada del IES Virgen del Carmen" height="100%" width="100%"&gt;&lt;/a&gt;
         </code></p><br>
         Que produciría como salida la imagen en miniatura: &nbsp;&nbsp;&nbsp;
-        <a href="img/IES.jpg"><img src="img/IES-miniatura.jpg" alt="Entrada del IES Virgen del Carmen"></a><br><br>
+        <a href="img/IES.jpg"><img src="img/IES-miniatura.jpg" alt="Entrada del IES Virgen del Carmen" height="100%" width="100%"></a><br><br>
         Donde podemos hacer click y se nos mostrará la imagen ampliada.</p><br>
 
         <h3>Enlaces para descargar archivos</h3>
@@ -1739,7 +1745,7 @@
                   <h1>CUADRICULA</h1>
               
                   <P>
-                    <img src="https://mdn.mozillademos.org/files/224/Canvas_default_grid.png" alt="" style="float: right; height: 220px; width: 220px;"
+                    <img src="https://mdn.mozillademos.org/files/224/Canvas_default_grid.png" alt="" height="100%" width="100%"
                       class="internal">
                     Antes de que podamos comenzar a dibujar, debemos hablar sobre la cuadrícula del lienzo o el espacio de
                     coordenadas . Nuestro esqueleto HTML tenía un elemento de lienzo de 150 píxeles de ancho y 150 píxeles de alto. A
@@ -2193,7 +2199,7 @@
             obsoleta con respecto a las nuevas tecnologías.</p>
         <li type="circle">WCAG2.0 se organiza según estos niveles:</li><br>
         
-        <img src="img/WCAG 2.0 niveles.png" alt="WCAG 2.0 niveles" width="500" height="300"><br><br>
+        <img src="img/WCAG 2.0 niveles.png" alt="WCAG 2.0 niveles" height="100%" width="100%"><br><br>
         
         <h4>4 Principios:</h4>
         <ul>
