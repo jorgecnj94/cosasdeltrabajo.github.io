@@ -120,6 +120,10 @@ $('#menu li a').on('click', function(){
 });
 */
 $(document).ready(function(){
+    $('#panel_tecno').hide();
+        $('#panel_proyectos').hide();
+        $('#panel_estudios').hide();
+        $('#panel_carrera').hide();
     $("#menu li a").on( "click", function() {
         //$('#target').hide(); //oculto mediante id
         $('#panel_sobre').hide(); //
