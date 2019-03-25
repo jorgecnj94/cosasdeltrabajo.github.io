@@ -88,7 +88,7 @@ $('#menu li a').click(function(){
     }
 
 */
-
+/*
 $('#menu li a').on('click', function(){
     $(this).attr('id').replace('menu_', 'panel_').removeClass('hidden');
     $(this).attr('id').replace('menu_', 'panel_').addClass('.panel');
@@ -112,9 +112,24 @@ $('#menu li a').on('click', function(){
     var panel_id = menu_id.replace('menu_', 'panel_');
     $(this).getElementById(panel_id).removeClass('.hidden');
     $(this).getElementById(panel_id).addClass('panel');*/
-   
+   /*
     $(this).addClass('nav-link activo');
     
     //$(this).removeClass('hidden');
     
+});
+*/
+$(document).ready(function(){
+    $("#menu li a").on( "click", function() {
+        //$('#target').hide(); //oculto mediante id
+        $('#panel_sobre').hide(); //
+        $('#panel_tecno').hide();
+        $('#panel_proyectos').hide();
+        $('#panel_estudios').hide();
+        $('#panel_carrera').hide();
+        var $this = $(this);
+        var menu_id = $this.attr('id');
+        var panel_id = menu_id.replace('menu_', 'panel_');
+        $("#" + panel_id).show(); //muestro mediante clase
+     });
 });
