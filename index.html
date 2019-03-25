@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <script src="js/vendor/jquery-3.3.1.min.js"></script>
+    <script src="js/vendor/popper.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/js/foundation.min.js"
         integrity="sha256-/PFxCnsMh+nTuM0k3VJCRch1gwnCfKjaP8rJNq5SoBg=" crossorigin="anonymous"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/controlador.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/controlador.js"></script>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -32,13 +34,13 @@
         <br><br>
         <h5 class="texto-centrado">Jorge Bedmar</h5><br>
 
-        <div class="container-fluid">
+        <div id="menu" class="container-fluid" >
             <ul class="nav navbar-nav">
-                <li class="active"><a class="nav-link" href="#" id="menu_sobre">Sobre mí</a></li>
-                <li><a class="nav-link" href="#" id="menu_tecno">Tecnologías</a></li>
-                <li><a class="nav-link" href="#" id="menu_proyectos">Proyectos</a></li>
-                <li><a class="nav-link" href="#" id="menu_estudios">Estudios</a></li>
-                <li><a class="nav-link" href="#" id="menu_carrera">Carrera laboral</a></li>
+                <li><a class="nav-link activo" href="#panel_sobre" id="menu_sobre">Sobre mí</a></li>
+                <li><a class="nav-link" href="#panel_tecno" id="menu_tecno">Tecnologías</a></li>
+                <li><a class="nav-link" href="#panel_proyectos" id="menu_proyectos">Proyectos</a></li>
+                <li><a class="nav-link" href="#panel_estudios" id="menu_estudios">Estudios</a></li>
+                <li><a class="nav-link" href="#panel_carrera" id="menu_carrera">Carrera laboral</a></li>
                 <br><br><br>
                 <li><b class="texto-centrado">Contácteme en</b><a class="btn btn-social btn-linkedin"
                         href="https://www.linkedin.com/in/jorgebedmar/" target="_blank">Linkedin</a></li>
@@ -72,7 +74,7 @@
             </P>
 
         </section>
-        <section id="panel_tecno" class="panel""><h2>Principales Tecnologías usadas<br></h2>
+        <section id="panel_tecno"><h2>Principales Tecnologías usadas<br></h2>
             <hr color=" #944545">
             <br>
             <p>CSS: Uso de Bootstrap y Foundation</p>
@@ -83,7 +85,7 @@
             <p>HTML5</p>
 
         </section>
-        <section id=" panel_proyectos" class="panel">
+        <section id="panel_proyectos">
             <br>
             <h2>Proyectos<br></h2>
             <hr color="#944545">
@@ -120,7 +122,7 @@
             <br><br>
 
         </section>
-        <section id="panel_estudios" class="panel">
+        <section id="panel_estudios">
             <h2>Estudios<br></h2>
             <hr color="#944545">
             <P LANG="en-GB" STYLE="margin-top: 0.33in; margin-bottom: 0.07in">
@@ -129,16 +131,17 @@
                         <FONT SIZE=6><B>
                                 <FONT FACE="Calibri, serif">
                                     <SPAN LANG="es-ES">Formación
-                                            académica</SPAN></FONT><br><br>
-                                </FONT>
-                            </B></FONT>
+                                        académica</SPAN></FONT><br><br>
+                        </FONT>
+                        </B>
                     </FONT>
+                </FONT>
                 </FONT>
             </P>
             <P LANG="en-GB" STYLE="margin-top: 0.07in; text-transform: uppercase">
                 <FONT COLOR="#262626"> <B>
                         <FONT FACE="Calibri, serif">
-                                <FONT SIZE=5><SPAN LANG="es-ES">2012
+                            <FONT SIZE=5><SPAN LANG="es-ES">2012
                                     – 2014&nbsp; | ETSIT UNIVERSIDAD DE Malaga, España</SPAN></FONT>
                         </FONT>
                     </B></FONT>
@@ -226,7 +229,7 @@
 
 
         </section>
-        <section id="panel_carrera" class="panel">
+        <section id="panel_carrera">
             <h2>Experiencia laboral<br></h2>
             <hr color="#944545">
             <br>
@@ -271,14 +274,15 @@
                 <FONT FACE="Calibri, serif">
                     <FONT SIZE=4><SPAN LANG="es-ES">Montaje
                             y posterior instalación de ordenadores interactivos para pacientes
-                            en los hospitales de la península, cumpliendo los plazos de entrega
-                            de una determinada cifra de ordenadores por semana.</SPAN></FONT>
+                            en los hospitales de la península,
+                            <p>cumpliendo los plazos de entrega
+                                de una determinada cifra de ordenadores por semana.</p></SPAN></FONT>
                 </FONT>
             </P>
             <P><br>
                 <FONT COLOR="#262626"><B>
                         <FONT FACE="Calibri, serif">
-                            <FONT SIZE=5>OtROS
+                            <FONT SIZE=5>OTROS
                                 EMPLEOS</FONT>
                         </FONT>
                     </B></FONT>
