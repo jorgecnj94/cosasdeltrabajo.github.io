@@ -90,7 +90,12 @@ $('#menu li a').click(function(){
 */
 
 $('#menu li a').on('click', function(){
+    $(this).attr('id').replace('menu_', 'panel_').removeClass('hidden');
+    $(this).attr('id').replace('menu_', 'panel_').addClass('.panel');
+    $('li a.nav-link activo').attr('id').replace('menu_', 'panel_').removeClass('panel');
+    $('li a.nav-link activo').attr('id').replace('menu_', 'panel_').addClass('.hidden');
     $('li a.nav-link activo').removeClass('nav-link activo');
+    
     /*$(this).getElementById('panel_sobre').removeClass('panel');
     $(this).getElementById('panel_sobre').addClass('.hidden');
     $(this).getElementById('panel_tecno').removeClass('panel');
